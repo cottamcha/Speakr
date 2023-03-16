@@ -8,6 +8,10 @@
     "build": "vite build",
     "serve": "vite preview"
   },
+    "sideEffects": [
+      "@firebase/app",
+      "@firebase/firestore"
+    ],
   "license": "MIT",
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",

@@ -4,7 +4,7 @@ import solidPlugin from 'vite-plugin-solid';
 export default defineConfig({
   plugins: [solidPlugin()],
   optimizeDeps: {
-    include: ['lodash-es'],
+    include: ['lodash-es','firebase/app', 'firebase/firestore'],
   },
   server: {
     port: 3000,
