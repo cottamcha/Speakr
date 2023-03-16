@@ -85,9 +85,9 @@ const MainSidebar: Component<Props> = (props) => {
                 opener={() => 
                   <div class="my-3 flex-it items-center flex-row p-3 rounded-3xl hover:bg-gray-800 hover:rounded-3xl transition duration-200 cursor-pointer">
                     <div class="flex-it">
-                      <div class="w-10 h-10 overflow-visible">
+                      <div class="w-10 h-10 overflow-visible mb-2 pr-2">
                         <img
-                          class="rounded-full"
+                          class="rounded-full object-cover w-12 h-12"
                           src={user?.avatar}
                         ></img>
                       </div>

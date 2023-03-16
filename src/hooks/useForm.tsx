@@ -104,6 +104,7 @@ const useForm =  <T extends Form> (initialForm: T) =>{
 
   
     const handleInput = (e: GliderInputEvent) => {
+      
         const {name, value} = e.currentTarget
         setForm(
             name as any, 

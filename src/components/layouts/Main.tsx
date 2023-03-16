@@ -2,7 +2,6 @@ import { JSXElement, ParentComponent } from "solid-js";
 import { Glide } from "../../types/Glide";
 import MainSidebar from "../sidebars/Main";
 import TrendSidebar from "../sidebars/Trends";
-import FPSCounter from "../utils/FPSCounter";
 
 type Props = {
   pageTitle: JSXElement;
@@ -33,7 +32,6 @@ const MainLayout: ParentComponent<Props> = (props) => {
                     </div>
                 <div class="flex-it md:w-92 w-0 mt-4">
                   <TrendSidebar />
-                  <FPSCounter />
                 </div>
               </div>
             </div>

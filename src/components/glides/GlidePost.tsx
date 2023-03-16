@@ -6,6 +6,7 @@ import { Component, Show } from "solid-js";
 import { Glide } from "../../types/Glide";
 import { User } from "../../types/User";
 import moment from "moment"
+import { usePersistence } from "../../context/persistence";
 
 type Props = {
   glide: Glide
@@ -13,6 +14,8 @@ type Props = {
 
 const GlidePost: Component<Props> = (props) => {
   const navigate = useNavigate();
+  const persistence = usePersistence()!;
+
   const glide = () => props.glide;
   const user = () => glide().user as User;
 
@@ -24,13 +27,14 @@ const GlidePost: Component<Props> = (props) => {
         <div class="flex-it mr-4">
           <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
             <img
-              class="rounded-full"
+              class="rounded-full object-cover w-12 h-12"
               src={user().avatar}
             ></img>
           </div>
         </div>
         <article 
           onClick={() => {
+            persistence.setValue(`selectedGlide-${glide().id}`, glide())
             navigate(`/${glide().uid}/glide/${glide().id}`)
           }}
           class="flex-it flex-grow flex-shrink cursor-pointer">

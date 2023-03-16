@@ -1,7 +1,6 @@
 import { Component, For, Show } from "solid-js";
 import MainLayout from "../components/layouts/Main";
 import { CenteredDataLoader } from "../components/utils/DataLoader";
-import Loader from "../components/utils/Loader";
 import { useAuthState } from "../context/auth";
 import useUsers from "../hooks/useUsers";
 
@@ -20,10 +19,10 @@ const ProfileScreen: Component = () => {
        onGlideAdded={() => {}} 
       pageTitle="Profile">
       <div class="flex-it py-1">
-        <div class="mt-6 pb-6 border-b border-gray-600">
+        <div class="pb-6 border-b border-gray-600">
           <div class="flex-it flex-row items-center px-4">
             <img
-              class="rounded-full h-24 mr-4"
+              class="rounded-full object-cover w-24 h-24 mr-4 cursor-pointer"
               src={authState.user?.avatar}
             ></img>
             <div class="mr-6">
@@ -61,8 +60,8 @@ const ProfileScreen: Component = () => {
               <div class="flex-it p-4">
                 <div class="flex-it flex-row">
                   <div class="flex-it mr-4">
-                    <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
-                      <img class="rounded-full" src={user.avatar}></img>
+                    <div class="w-14 h-14 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
+                      <img class="rounded-full object-cover w-full h-full" src={user.avatar}></img>
                     </div>
                   </div>
                   <article class="flex-it flex-grow flex-shrink">

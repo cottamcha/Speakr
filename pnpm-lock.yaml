@@ -3,8 +3,10 @@ lockfileVersion: 5.4
 specifiers:
   '@solidjs/router': ^0.7.0
   '@tailwindcss/forms': ^0.5.3
+  '@types/lodash-es': ^4.17.7
   autoprefixer: ^10.4.13
   firebase: ^9.17.2
+  lodash-es: ^4.17.21
   moment: ^2.29.4
   postcss: ^8.4.21
   solid-icons: ^1.0.4
@@ -17,12 +19,14 @@ specifiers:
 dependencies:
   '@solidjs/router': 0.7.0_solid-js@1.6.10
   firebase: 9.17.2
+  lodash-es: 4.17.21
   moment: 2.29.4
   solid-icons: 1.0.4_solid-js@1.6.10
   solid-js: 1.6.10
 
 devDependencies:
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
+  '@types/lodash-es': 4.17.7
   autoprefixer: 10.4.13_postcss@8.4.21
   postcss: 8.4.21
   tailwindcss: 3.2.7_postcss@8.4.21
@@ -1145,6 +1149,16 @@ packages:
       tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
+  /@types/lodash-es/4.17.7:
+    resolution: {integrity: sha512-z0ptr6UI10VlU6l5MYhGwS4mC8DZyYer2mCoyysZtSF7p26zOX8UpbrV0YpNYLGS8K4PUFIyEr62IMFFjveSiQ==}
+    dependencies:
+      '@types/lodash': 4.14.191
+    dev: true
+
+  /@types/lodash/4.14.191:
+    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==}
+    dev: true
+
   /@types/long/4.0.2:
     resolution: {integrity: sha512-MqTGEo5bj5t157U6fA/BiDynNkn0YknVdh48CMPkTSpFTVmvao5UQmm7uEF6xBEo7qIMAlY/JSleYaE6VOdpaA==}
     dev: false
@@ -1611,6 +1625,10 @@ packages:
     resolution: {integrity: sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg==}
     engines: {node: '>=10'}
     dev: true
+
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
 
   /lodash.camelcase/4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}

@@ -60,10 +60,10 @@ const Messenger: Component<Props> = (initialprops) =>{
         <div class="flex-it py-1 px-4 flex-row">
             <Show when={props.showAvatar}>
                 <div class="flex-it mr-4">
-                    <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
+                    <div class="overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
                         <img
-                        class="rounded-full"
-                        src={user?.avatar}
+                            class="rounded-full object-cover w-16 h-16"
+                            src={user?.avatar}
                         ></img>
                     </div>
                 </div>
