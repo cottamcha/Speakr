@@ -18,11 +18,15 @@ type PersistenceContextType = {
 
 const PersistenceContext = createContext<PersistenceContextType>()
 
+const PERSISTENCE_LIMIT = 50;
 
 const PersistenceProvider: ParentComponent = (props) => {
     const [store, setStore] = createStore<PersistenceStore>()
 
     const setValue = (key: string, value: any) => {
+        if(Object.keys(store).length > PERSISTENCE_LIMIT){
+            clear();
+        }
         setStore(produce(store => {
             store[key] = value;
         }))
@@ -30,6 +34,14 @@ const PersistenceProvider: ParentComponent = (props) => {
     
     const getValue = <T,>(key: string) => {
         return store[key] as T
+    }
+
+    const clear = () => {
+        setStore(produce(store => {
+            Object.keys(store).forEach(key => {
+                delete store[key]
+            })
+        }))
     }
 
     const hasValue = (key: string) => !!store[key];
@@ -71,7 +83,8 @@ const PersistenceProvider: ParentComponent = (props) => {
             return value
         }
 
-        const result = await getData();        
+        const result = await getData();
+        setValue(key, result)        
         return result
     }
 

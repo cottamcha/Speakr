@@ -62,7 +62,7 @@ const Messenger: Component<Props> = (initialprops) =>{
                 <div class="flex-it mr-4">
                     <div class="overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
                         <img
-                            class="rounded-full object-cover w-16 h-16"
+                            class="rounded-full object-cover w-12 h-12"
                             src={user?.avatar}
                         ></img>
                     </div>
