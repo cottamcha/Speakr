@@ -1,8 +1,14 @@
 import { defineConfig } from 'vite';
+import { chunkSplitPlugin } from 'vite-plugin-chunk-split'
 import solidPlugin from 'vite-plugin-solid';
 
 export default defineConfig({
-  plugins: [solidPlugin()],
+  plugins: [
+    solidPlugin(),
+    chunkSplitPlugin({
+      strategy: 'default',
+    })
+  ],
   optimizeDeps: {
     include: ['lodash-es','firebase/app', 'firebase/firestore'],
   },
@@ -11,14 +17,5 @@ export default defineConfig({
   },
   build: {
       target: 'esnext',
-      rollupOptions: {
-        output:{
-            manualChunks(id) {
-                if (id.includes('node_modules')) {
-                    return id.toString().split('node_modules/')[1].split('/')[0].toString();
-                }
-            }
-        }
-    }
   },
 });
