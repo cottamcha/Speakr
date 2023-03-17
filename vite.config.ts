@@ -16,6 +16,12 @@ export default defineConfig({
     port: 3000,
   },
   build: {
+      minify:'terser',
       target: 'esnext',
+      terserOptions: {
+        output: {
+          comments: false, // This will remove all comments from the output files
+        },
+      },
   },
 });
