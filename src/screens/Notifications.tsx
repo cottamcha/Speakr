@@ -2,11 +2,11 @@ import { Component } from "solid-js";
 import MainLayout from "../components/layouts/Main";
 import ComingSoon from '../components/utils/ComingSoon'
 
-const MoreScreen: Component = () => {
+const NotificationsScreen: Component = () => {
 
     return(
         <MainLayout
-            pageTitle="More"
+            pageTitle="Notifications"
             onGlideAdded={()=>{}}
         >
             <div>
@@ -17,4 +17,4 @@ const MoreScreen: Component = () => {
 }
 
 
-export default MoreScreen;
+export default NotificationsScreen;
