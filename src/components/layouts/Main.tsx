@@ -30,7 +30,7 @@ const MainLayout: ParentComponent<Props> = (props) => {
                     </div>
                     {props.children}
                     </div>
-                <div class="flex-it md:w-92 w-0 mt-4">
+                <div class="flex-it lg:w-92 w-0 mt-4">
                   <TrendSidebar />
                 </div>
               </div>

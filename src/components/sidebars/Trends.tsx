@@ -4,31 +4,31 @@ const randomize = () => Math.floor(Math.random() * 500)
 
 const trends = [
     {
-        category: "sports",
-        content: "Something1",
-        glideCount: randomize()
+      category: "Sports",
+      content: "🏆 Breaking: Underdogs triumph in an epic comeback! Fans go wild as the game enters the history books. #SportsMoment",
+      likeCount: randomize()
     },
     {
-        category: "finance",
-        content: "Something2",
-        glideCount: randomize()
+      category: "Finance",
+      content: "💰 Market Watch: Major tech company's stock soars after announcing groundbreaking innovation. Investors bullish. #FinanceUpdate",
+      likeCount: randomize()
     },
     {
-        category: "games",
-        content: "Something3",
-        glideCount: randomize()
+      category: "Games",
+      content: "🎮 New release: Highly anticipated RPG game takes the gaming world by storm. Gamers rejoice! #GameOn",
+      likeCount: randomize()
     },
     {
-        category: "health",
-        content: "Something4",
-        glideCount: randomize()
+      category: "Health",
+      content: "🍎 Wellness tip: Top nutritionists reveal the superfood you should be eating every day. #HealthHacks",
+      likeCount: randomize()
     },
     {
-        category: "tech",
-        content: "Something5",
-        glideCount: randomize()
+      category: "Tech",
+      content: "🚀 Futuristic tech: Revolutionary gadget promises to change the way we interact with the digital world. #TechTrends",
+      likeCount: randomize()
     },
-]
+  ];
 
 
 
@@ -43,11 +43,11 @@ const TrendSidebar: Component = () => {
                         { (trend) =>
                             <div class="flex-it p-4 cursor-pointer transition duration-200 hover:bg-gray-700">
                                 <div class="flex-it">
+                                <span class="text-lg font-bold">{trend.category}</span>
                                 <span class="text-gray-400 text-sm">
                                     {trend.content}
                                 </span>
-                                <span class="text-lg font-bold">{trend.category}</span>
-                                <span class="text-gray-400 text-sm">{trend.glideCount} likes</span>
+                                <span class="text-gray-400 text-sm">{trend.likeCount} likes</span>
                                 </div>
                             </div>
                         }

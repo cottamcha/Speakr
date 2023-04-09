@@ -21,7 +21,7 @@ const MainSidebar: Component<Props> = (props) => {
     <header class="lg:flex-grow flex-it items-end">
       <div class="xl:w-80 w-20 flex-it">
         <div class="h-full fixed flex-it top-0">
-          <div class="flex-it h-full xl:w-80 w-20 overflow-y-auto px-3 justify-between">
+          <div class="flex-it h-full xl:w-80 w-20 px-3 justify-between">
             <div class="flex-it items-start">
               <div class="p-3 pt-4 xl:pb-3 pb-0 xl:text-2xl text-sm font-bold transition duration-200 hover:opacity-80">
                 <a href="#">

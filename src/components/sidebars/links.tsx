@@ -8,26 +8,31 @@ const SIZE = 24
 export const links = [{
     name: "Home",
     href: "/",
+    isLinkDisabled: false,
     icon: () => <AiOutlineHome size={SIZE} />
 },
 {
     name: "Profile",
     href: "/profile",
+    isLinkDisabled: false,
     icon: () => <CgProfile size={SIZE} />
 },
 {
     name: "Notifications",
     href: "/",
+    isLinkDisabled: true,
     icon: () => <IoNotificationsCircleOutline size={SIZE} />
 },
 {
     name: "More",
     href: "/more",
+    isLinkDisabled: true,
     icon: () => <CgMoreO size={SIZE} />
 },
 {
     name: "Discover",
     href: "/",
+    isLinkDisabled: true,
     icon: () => <RiMapCompassDiscoverLine size={SIZE} />
 },
 ]

@@ -1,17 +1,18 @@
 import { defineConfig } from 'vite';
 import { chunkSplitPlugin } from 'vite-plugin-chunk-split'
 import solidPlugin from 'vite-plugin-solid';
+import visualizer from 'rollup-plugin-visualizer'
 
 export default defineConfig({
   plugins: [
     solidPlugin(),
     chunkSplitPlugin({
       strategy: 'default',
-    })
+    }),
+    visualizer({
+      open: true, // Opens the generated report in the browser
+    }),
   ],
-  optimizeDeps: {
-    include: ['lodash-es','firebase/app', 'firebase/firestore'],
-  },
   server: {
     port: 3000,
   },
@@ -23,5 +24,6 @@ export default defineConfig({
           comments: false, // This will remove all comments from the output files
         },
       },
+    }
   },
-});
+);

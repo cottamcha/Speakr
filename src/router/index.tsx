@@ -3,6 +3,7 @@ import { lazy } from "solid-js";
 
 import GlideDetailScreen from "../screens/GlideDetail";
 import HomeScreen from "../screens/Home";
+import MoreScreen from "../screens/More";
 import ProfileScreen from "../screens/Profile";
 import AuthLayout from "./layouts/AuthLayout";
 import MainLayout from "./layouts/MainLayout";
@@ -18,6 +19,7 @@ const AppRoutes = () => {
                 <Route path="" component={HomeScreen}/>
                 <Route path="/:userId/glide/:id" component={GlideDetailScreen}/>
                 <Route path="profile" component={ProfileScreen}/>
+                <Route path="more" component={MoreScreen} />
             </Route>
             <Route path="/auth" component={AuthLayout}>
                 <Route path="/login" component={LoginScreen}/>
