@@ -29,10 +29,10 @@ const RegisterScreen:Component = () => {
 
 
     return(
-        <div class="flex-it justify-center items-center h-[150vh]">
-          <div class="text-white text-center text-5xl font-bold p-1">Speakr </div>
+        <div class="flex-it justify-center items-center h-[125vh]">
+          <div class="text-white text-center text-5xl font-bold pb-2">Speakr </div>
           <div class="text-white text-center text-3xl font-bold">Become a member</div>
-          <div class="text-slate-400 text-lg tracking-wider font-semibold mt-1">built with solidjs</div>
+          <div class="text-slate-400 text-lg font-medium">built with solidjs</div>
           <div class="mt-10 mb-20 flex-it h-100 xs:w-100 bg-white p-11 rounded-3xl">
             <div class="flex-it">
               <form class="flex-it">
@@ -94,7 +94,7 @@ const RegisterScreen:Component = () => {
                           onInput={handleInput}
                           use:validate={[requiredValidator]}
                           type="text"
-                          placeholder="https://robohash.org/any-random-text"
+                          placeholder=""
                           name="avatar"
                           id="avatar"
                           class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
@@ -137,7 +137,7 @@ const RegisterScreen:Component = () => {
                       </div>
                     </div>
                   </div>
-                  <div class="text-sm text-gray-600 pb-4">
+                  <div class="text-sm text-gray-600 py-4">
                     Already Registered?{" "}
                     <A class="underline" href="/auth/login">
                       Go to Login
@@ -151,7 +151,7 @@ const RegisterScreen:Component = () => {
                       class="
                       bg-blue-400 hover:bg-blue-500 focus:ring-0
                       disabled:cursor-not-allowed disabled:bg-gray-400
-                      inline-flex justify-center rounded-lg border border-transparent py-2 px-4 text-sm font-medium text-white shadow-sm focus:outline-none focus:ring-offset-2"
+                      inline-flex justify-center rounded-lg border border-transparent py-2 px-4 text-xl font-medium text-white shadow-sm focus:outline-none focus:ring-offset-2"
                     >
                       Register
                     </button>
