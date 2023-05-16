@@ -30,7 +30,7 @@ const RegisterScreen:Component = () => {
 
     return(
         <div class="flex-it justify-center items-center h-full">
-        <div class="text-white text-center text-4xl mt-20 font-bold">Speakr - Become a member</div>
+        <div class="text-white text-center text-4xl font-bold mt-[20vh]">Speakr - Become a member</div>
         <div class="text-slate-400 text-lg tracking-wider font-semibold mt-1">built with solidjs</div>
         <div class="mt-10 flex-it h-100 xs:w-100 lg:w-25 bg-white p-10 rounded-3xl">
           <div class="flex-it">
