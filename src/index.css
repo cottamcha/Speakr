@@ -17,7 +17,12 @@ html {
 
 body {
   margin: 0;
-  background-color: rgb(17, 24, 39);
+  background: linear-gradient(
+    0deg,
+    rgba(77, 143, 255, 1) 0%,
+    rgba(29, 41, 103, 1) 100%
+  );
+  background-repeat: no-repeat;
 }
 
 @layer components {
