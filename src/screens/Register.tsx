@@ -30,8 +30,9 @@ const RegisterScreen:Component = () => {
 
     return(
         <div class="flex-it justify-center items-center h-full">
-        <div class="text-white text-4xl font-bold">Speakr - Become a member</div>
-        <div class="mt-10 flex-it h-100 xs:w-100 w-full bg-white p-10 rounded-2xl">
+        <div class="text-white text-center text-4xl mt-20 font-bold">Speakr - Become a member</div>
+        <div class="text-slate-400 text-lg tracking-wider font-semibold mt-1">built with solidjs</div>
+        <div class="mt-10 flex-it h-100 xs:w-100 lg:w-25 bg-white p-10 rounded-3xl">
           <div class="flex-it">
             <form class="flex-it">
               <div class="flex-it overflow-hidden sm:rounded-md">
@@ -47,7 +48,7 @@ const RegisterScreen:Component = () => {
                         type="text"
                         name="fullName"
                         id="fullName"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                       <FormError>{errors["fullName"]}</FormError>
                     </div>
@@ -64,7 +65,7 @@ const RegisterScreen:Component = () => {
                         type="text"
                         name="nickName"
                         id="nicknName"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                       <FormError>{errors["nickName"]}</FormError>
                     </div>
@@ -79,7 +80,7 @@ const RegisterScreen:Component = () => {
                         type="text"
                         name="email"
                         id="email"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                       <FormError>{errors["email"]}</FormError>
                     </div>
@@ -95,7 +96,7 @@ const RegisterScreen:Component = () => {
                         placeholder="https://robohash.org/any-random-text"
                         name="avatar"
                         id="avatar"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                       <FormError>{errors["avatar"]}</FormError>
                     </div>
@@ -110,7 +111,7 @@ const RegisterScreen:Component = () => {
                         type="password"
                         name="password"
                         id="password"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                       <FormError>{errors["password"]}</FormError>
                     </div>
@@ -129,7 +130,7 @@ const RegisterScreen:Component = () => {
                         type="password"
                         name="passwordConfirmation"
                         id="passwordConfirmation"
-                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                        class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                       />
                       <FormError>{errors["passwordConfirmation"]}</FormError>
                     </div>
@@ -149,7 +150,7 @@ const RegisterScreen:Component = () => {
                     class="
                     bg-blue-400 hover:bg-blue-500 focus:ring-0
                     disabled:cursor-not-allowed disabled:bg-gray-400
-                    inline-flex justify-center rounded-md border border-transparent py-2 px-4 text-sm font-medium text-white shadow-sm focus:outline-none focus:ring-offset-2"
+                    inline-flex justify-center rounded-lg border border-transparent py-2 px-4 text-sm font-medium text-white shadow-sm focus:outline-none focus:ring-offset-2"
                   >
                     Register
                   </button>
