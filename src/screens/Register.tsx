@@ -92,7 +92,7 @@ const RegisterScreen:Component = () => {
                         onInput={handleInput}
                         use:validate={[requiredValidator]}
                         type="text"
-                        placeholder="No Image URL? Use: https://robohash.org/any-random-text"
+                        placeholder="https://robohash.org/any-random-text"
                         name="avatar"
                         id="avatar"
                         class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
