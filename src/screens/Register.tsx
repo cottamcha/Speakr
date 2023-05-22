@@ -99,10 +99,11 @@ const RegisterScreen:Component = () => {
                           id="avatar"
                           class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                         />
+                        <p class="text-sm font-semibold text-gray-700 mt-2">☝☝☝ <br/> <span class="text-blue-500">https://api.dicebear.com/6.x/adventurer/svg?seed=</span><span class="font-bold text-red-600">random-text-of-your-choice</span></p>
                         <FormError>{errors["avatar"]}</FormError>
                       </div>
     
-                      <div class="flex-it py-2">
+                      <div class="flex-it pb-2">
                         <label class="block text-md font-medium text-gray-700">
                           Password
                         </label>
