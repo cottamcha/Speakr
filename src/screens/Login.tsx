@@ -24,7 +24,7 @@ const LoginScreen: Component = () => {
       <div class="text-white text-center text-5xl font-bold pb-2">Speakr </div>
       <div class="text-white text-center text-3xl font-bold">Come on in...</div>
       <div class="text-slate-400 text-md mt-1 font-medium">built with solidjs</div>
-      <div class="mt-10 flex-it h-100 xs:w-100 w-full bg-white p-10 rounded-3xl">
+      <div class="mt-10 flex-it h-100 xs:w-100 max-w-100 bg-white p-10 rounded-3xl">
         <div class="flex-it">
           <form class="flex-it">
             <div class="flex-it overflow-hidden sm:rounded-md">
