@@ -84,6 +84,7 @@ export const firstUppercaseLetter = (element: HTMLInputElement) => (form: Form) 
 
 
 const useForm =  <T extends Form> (initialForm: T) =>{
+   
     const [form, setForm] = createStore(initialForm);
     const [errors, setErrors] = createStore<FormErrors>();
 

@@ -29,10 +29,10 @@ const RegisterScreen:Component = () => {
 
 
     return(
-        <div class="flex-it justify-center items-center top-20">
+        <div class="flex-it justify-center items-center top-[6.25rem]">
           <div class="text-white text-center text-5xl font-bold pb-2">Speakr </div>
           <div class="text-white text-center text-3xl font-bold">Become a member</div>
-          <div class="text-slate-400 text-lg font-medium">built with solidjs</div>
+          <div class="text-slate-400 text-md font-medium mt-1">built with solidjs</div>
           <div class="mt-10 mb-20 flex-it h-100 xs:w-100 bg-white p-11 rounded-3xl">
             <div class="flex-it">
               <form class="flex-it">

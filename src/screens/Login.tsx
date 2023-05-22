@@ -21,15 +21,17 @@ const LoginScreen: Component = () => {
 
   return (
     <div class="flex-it justify-center items-center h-full">
-      <div class="text-white text-4xl font-bold">Speakr - Come on in</div>
-      <div class="mt-10 flex-it h-100 xs:w-100 w-full bg-white p-10 rounded-2xl">
+      <div class="text-white text-center text-5xl font-bold pb-2">Speakr </div>
+      <div class="text-white text-center text-3xl font-bold">Come on in...</div>
+      <div class="text-slate-400 text-md mt-1 font-medium">built with solidjs</div>
+      <div class="mt-10 flex-it h-100 xs:w-100 w-full bg-white p-10 rounded-3xl">
         <div class="flex-it">
           <form class="flex-it">
             <div class="flex-it overflow-hidden sm:rounded-md">
               <div class="flex-it">
                 <div class="flex-it">
                   <div class="flex-it py-2">
-                    <label class="block text-sm font-medium text-gray-700">
+                    <label class="block text-md font-medium text-gray-700">
                       Email
                     </label>
                     <input
@@ -38,12 +40,12 @@ const LoginScreen: Component = () => {
                       type="email"
                       name="email"
                       id="email"
-                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                     <FormError>{errors["email"]}</FormError>
                   </div>
                   <div class="flex-it py-2">
-                    <label class="block text-sm font-medium text-gray-700">
+                    <label class="block text-md font-medium text-gray-700">
                       Password
                     </label>
                     <input
@@ -52,13 +54,13 @@ const LoginScreen: Component = () => {
                       type="password"
                       name="password"
                       id="password"
-                      class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
+                      class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                     />
                     <FormError>{errors["password"]}</FormError>
                   </div>
                 </div>
               </div>
-              <div class="text-sm text-gray-600 pb-4">
+              <div class="text-sm text-gray-600 py-4">
                 No Account Yet?{" "}
                 <A class="underline" href="/auth/register">
                   Create a new account
@@ -71,7 +73,7 @@ const LoginScreen: Component = () => {
                   type="button"
                   class="
                   bg-blue-400 hover:bg-blue-500
-                  inline-flex focus:ring-0 disabled:cursor-not-allowed disabled:bg-gray-400 justify-center rounded-md border border-transparent py-2 px-4 text-sm font-medium text-white shadow-sm  focus:outline-none focus:ring-offset-2"
+                  inline-flex focus:ring-0 disabled:cursor-not-allowed disabled:bg-gray-400 justify-center rounded-md border border-transparent py-2 px-4 text-xl font-medium text-white shadow-sm  focus:outline-none focus:ring-offset-2"
                 >
                   Login
                 </button>
