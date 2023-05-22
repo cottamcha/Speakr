@@ -23,6 +23,7 @@ body {
     rgba(29, 41, 103, 1) 100%
   );
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 @layer components {

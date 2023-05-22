@@ -13,7 +13,7 @@ type Props = {
 const MainLayout: ParentComponent<Props> = (props) => {
 
     return(
-        <div class="w-full h-full bg-gray-900 text-gray-100">
+    <div class="w-full min-h-screen text-gray-100">
         <div class="flex h-full min-h-252">
           <MainSidebar 
             selectedGlide={props.selectedGlide}
@@ -22,7 +22,7 @@ const MainLayout: ParentComponent<Props> = (props) => {
             <div class="flex md:w-248 w-full h-full">
               <div class="flex-it flex-grow flex-shrink">
                 <div class="flex-it flex-row justify-between min-h-full">
-                  <div class="flex-it md:max-w-152 w-full border-x-1 border-solid border-gray-700">
+                  <div class="flex-it md:max-w-152 w-full border-x-1 border-solid border-white">
                     <div class="sticky z-10 flex-it top-0">
                       <div class="flex-it h-14 p-4 xl:text-xl text-sm font-bold z-10 backdrop-blur-md bg-opacity-70">
                         {props.pageTitle}

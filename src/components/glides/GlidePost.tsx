@@ -22,7 +22,7 @@ const GlidePost: Component<Props> = (props) => {
   const hasUrl = () => !!glide().mediaUrl
 
   return (
-    <div class="flex-it p-4 border-b-1 border-solid border-gray-700 hover:bg-gray-800 transition-colors duration-500">
+    <div class="flex-it p-4 border-b-1 border-opacity-50 hover:bg-cyan-700 hover:bg-opacity-30 transition-colors duration-500">
       <div class="flex-it flex-row">
         <div class="flex-it mr-4">
           <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
@@ -43,11 +43,11 @@ const GlidePost: Component<Props> = (props) => {
               <div>
                 <span class="font-bold text-lg hover:text-slate-300">{user().fullName}</span>
                 <span class="mx-2">&#8226;</span>
-                <span class="text-gray-400 italic text-sm">{moment(glide().date.toDate().toISOString()).fromNow()}</span>
+                <span class="text-white italic text-sm">{moment(glide().date.toDate().toISOString()).fromNow()}</span>
                 <br />
-                <span class="font-medium text-gray-400 hover:text-gray-300  text-sm"> @{user().nickName}</span>
+                <span class="font-medium text-white hover:text-gray-300 shadow-xl text-sm"> @{user().nickName}</span>
               </div>
-              <div class="text-gray-400 cursor-pointer transition hover:text-red-400">
+              <div class="text-white cursor-pointer transition hover:text-red-400">
                 <FiTrash size={16} />
               </div>
             </div>
@@ -60,7 +60,7 @@ const GlidePost: Component<Props> = (props) => {
               <img src={glide().mediaUrl}/>
             </div>
           </Show>
-          <div class="flex-it flex-row flex-grow text-gray-400">
+          <div class="flex-it flex-row flex-grow text-white">
             <div class="flex-it flex-row items-center cursor-pointer mr-5 transition hover:text-blue-400">
               <AiOutlineMessage size={18} />
               <span class="text-xs ml-3">{glide().subglidesCount}</span>
