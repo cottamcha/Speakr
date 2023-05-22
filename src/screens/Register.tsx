@@ -29,7 +29,7 @@ const RegisterScreen:Component = () => {
 
 
     return(
-        <div class="flex-it justify-center items-center">
+        <div class="flex-it justify-center items-center top-20">
           <div class="text-white text-center text-5xl font-bold pb-2">Speakr </div>
           <div class="text-white text-center text-3xl font-bold">Become a member</div>
           <div class="text-slate-400 text-lg font-medium">built with solidjs</div>
