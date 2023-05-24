@@ -33,7 +33,7 @@ const RegisterScreen:Component = () => {
           <div class="text-white text-center text-5xl font-bold pb-2">Speakr </div>
           <div class="text-white text-center text-3xl font-bold">Become a member</div>
           <div class="text-slate-400 text-md font-medium mt-1">built with solidjs</div>
-          <div class="mt-10 flex-it h-100 sm:max-w-100 max-w-84 bg-white p-10 rounded-3xl">
+          <div class="mt-10 flex-it h-100 sm:max-w-100 max-w-84 bg-white p-10 mb-32 rounded-3xl">
             <div class="flex-it">
               <form class="flex-it">
                 <div class="flex-it overflow-hidden sm:rounded-md">
