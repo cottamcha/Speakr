@@ -22,9 +22,9 @@ const MainLayout: ParentComponent<Props> = (props) => {
             <div class="flex md:w-248 w-full h-full">
               <div class="flex-it flex-grow flex-shrink">
                 <div class="flex-it flex-row justify-between min-h-full">
-                  <div class="flex-it md:max-w-152 w-full border-x-1 border-solid border-white">
+                  <div class="flex-it md:max-w-152 w-full">
                     <div class="sticky z-10 flex-it top-0">
-                      <div class="flex-it h-14 p-4 xl:text-xl text-sm font-bold z-10 backdrop-blur-md bg-opacity-70">
+                      <div class="flex-it h-14 p-4 xl:text-2xl text-md font-bold z-10 backdrop-blur-md bg-opacity-70">
                         {props.pageTitle}
                       </div>
                     </div>

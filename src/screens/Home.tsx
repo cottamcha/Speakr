@@ -35,7 +35,6 @@ const HomeScreen: Component = () => {
       onGlideAdded={addGlide}
     >
       <Messenger  onGlideAdded={addGlide}/>
-      <div class="h-px bg-gray-700 my-1" />
       <Show when={store.freshGlides.length >= 3}>
         <Portal>
           <div class="fixed top-2 z-100 left-2/4 -translate-x-1/2">

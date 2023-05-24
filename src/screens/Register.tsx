@@ -99,8 +99,8 @@ const RegisterScreen:Component = () => {
                           id="avatar"
                           class="mt-1 block w-full rounded-lg border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm"
                         />
-                        <p class="text-sm font-semibold text-gray-700 mt-2">☝☝☝ <br/> <span class="text-blue-500">https://api.dicebear.com/6.x/adventurer/svg?seed=</span><span class="font-bold text-red-600">random-text-of-your-choice</span></p>
                         <FormError>{errors["avatar"]}</FormError>
+                        <p class="text-sm font-semibold text-gray-700 mt-2">☝☝☝ <br/> <span class="text-blue-500">https://api.dicebear.com/6.x/adventurer/svg?seed=</span><span class="font-bold text-red-600">random-text-of-your-choice</span></p>
                       </div>
     
                       <div class="flex-it pb-2">
@@ -150,7 +150,7 @@ const RegisterScreen:Component = () => {
                       onClick={submitForm(onFormSubmit)}
                       type="button"
                       class="
-                      bg-blue-400 hover:bg-blue-500 focus:ring-0
+                      bg-gradient-to-tr from-sky-500 to-blue-900 focus:ring-0
                       disabled:cursor-not-allowed disabled:bg-gray-400
                       inline-flex justify-center rounded-lg border border-transparent py-2 px-4 text-xl font-medium text-white shadow-sm focus:outline-none focus:ring-offset-2"
                     >

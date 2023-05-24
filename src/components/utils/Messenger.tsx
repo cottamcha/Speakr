@@ -98,7 +98,7 @@ const Messenger: Component<Props> = (initialprops) =>{
                             name="myfile" />
                     </div>
                 </div>
-                <div class="flex-it w-32 mt-3 cursor-pointer">
+                <div class="flex-it w-32 mt-3 cursor-pointer ">
                     <Button
                         disabled={sendDisable()}
                         onClick={async ()=> {

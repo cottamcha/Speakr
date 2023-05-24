@@ -29,10 +29,10 @@ export const FormError: ParentComponent = (props) => {
     return(
 
       <Show when={errors().length > 0}>
-        <div class="flex-it grow text-xs bg-red-400 text-white p-3 pl-3 mt-1 rounded-md">
+        <div class="flex-it grow text-sm bg-gradient-to-tr from-sky-500 to-blue-900 text-white py-[0.6rem] pl-3 mt-1 rounded-md">
           <For each={errors()}>
             {(error) => 
-              <div class="text-blue-100">
+              <div class="text-white font-semibold">
                 {error}
               </div>
             }

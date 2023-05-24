@@ -22,7 +22,7 @@ const GlidePost: Component<Props> = (props) => {
   const hasUrl = () => !!glide().mediaUrl
 
   return (
-    <div class="flex-it p-4 border-b-1 border-opacity-50 hover:bg-cyan-700 hover:bg-opacity-30 transition-colors duration-500">
+    <div class="flex-it p-4 bg-blue-500 bg-opacity-20 hover:bg-blue-200 hover:bg-opacity-30 transition-colors duration-500 rounded-xl mt-4">
       <div class="flex-it flex-row">
         <div class="flex-it mr-4">
           <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
