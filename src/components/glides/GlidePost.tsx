@@ -22,7 +22,7 @@ const GlidePost: Component<Props> = (props) => {
   const hasUrl = () => !!glide().mediaUrl
 
   return (
-    <div class="flex-it p-4 bg-blue-500 bg-opacity-20 hover:bg-blue-200 hover:bg-opacity-30 transition-colors duration-500 rounded-xl mt-4">
+    <div class="flex-it p-4 bg-blue-500 bg-opacity-20 hover:bg-blue-200 hover:bg-opacity-30 transition-colors duration-500 rounded-xl mt-4 max-w-auto mr-10">
       <div class="flex-it flex-row">
         <div class="flex-it mr-4">
           <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
@@ -43,7 +43,7 @@ const GlidePost: Component<Props> = (props) => {
               <div>
                 <span class="font-bold text-lg hover:text-slate-300">{user().fullName}</span>
                 <span class="mx-2">&#8226;</span>
-                <span class="text-white italic text-sm">{moment(glide().date.toDate().toISOString()).fromNow()}</span>
+                <span class="text-gray-300 drop-shadow-lg italic text-sm">{moment(glide().date.toDate().toISOString()).fromNow()}</span>
                 <br />
                 <span class="font-medium text-white hover:text-gray-300 shadow-xl text-sm"> @{user().nickName}</span>
               </div>
@@ -53,7 +53,7 @@ const GlidePost: Component<Props> = (props) => {
             </div>
           </div>
           <div class="flex-it flex-row flex-grow-0 items-center mb-2">
-            <div class="flex-it mr-3 mb-3 w-full">{glide().content}</div>
+            <div class="flex-it mr-3 sm:mb-3 w-full">{glide().content}</div>
           </div>
           <Show when={hasUrl}>
             <div class="flex-it max-w-72 pb-6">

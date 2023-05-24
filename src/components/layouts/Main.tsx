@@ -24,6 +24,7 @@ const MainLayout: ParentComponent<Props> = (props) => {
                 <div class="flex-it flex-row justify-between min-h-full">
                   <div class="flex-it md:max-w-152 w-full">
                     <div class="sticky z-10 flex-it top-0">
+                      <div class="text-2xl font-bold pl-3 pt-6">Speakr</div>
                       <div class="flex-it h-14 p-4 xl:text-2xl text-md font-bold z-10 backdrop-blur-md bg-opacity-70">
                         {props.pageTitle}
                       </div>
