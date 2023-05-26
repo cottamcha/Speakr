@@ -22,12 +22,12 @@ const GlidePost: Component<Props> = (props) => {
   const hasUrl = () => !!glide().mediaUrl
 
   return (
-    <div class="flex-it p-4 bg-blue-500 bg-opacity-20 hover:bg-blue-200 hover:bg-opacity-30 transition-colors duration-500 rounded-xl mt-4 max-w-auto mr-10">
+    <div class="flex-it p-4 bg-gray-100 bg-opacity-50 hover:bg-blue-200 hover:bg-opacity-30 transition-colors duration-500 rounded-xl mt-4 max-w-auto mr-10 shadow-2xl">
       <div class="flex-it flex-row">
         <div class="flex-it mr-4">
           <div class="w-12 h-12 overflow-visible cursor-pointer transition duration-200 hover:opacity-80">
             <img
-              class="rounded-full object-cover w-12 h-12"
+              class="rounded-full bg-slate-50 object-cover w-11 h-11 mt-1"
               src={user().avatar}
             ></img>
           </div>
@@ -41,11 +41,11 @@ const GlidePost: Component<Props> = (props) => {
           <div class="flex-it justify-center flex-grow mb-1">
             <div class="flex-it justify-between flex-row w-full">
               <div>
-                <span class="font-bold text-lg hover:text-slate-300">{user().fullName}</span>
+                <span class="font-bold text-xl hover:text-slate-300 drop-shadow-2xl">{user().fullName}</span>
                 <span class="mx-2">&#8226;</span>
-                <span class="text-gray-300 drop-shadow-lg italic text-sm">{moment(glide().date.toDate().toISOString()).fromNow()}</span>
+                <span class="text-gray-300 italic text-sm drop-shadow-2xl">{moment(glide().date.toDate().toISOString()).fromNow()}</span>
                 <br />
-                <span class="font-medium text-white hover:text-gray-300 shadow-xl text-sm"> @{user().nickName}</span>
+                <span class="font-medium text-gray-300 hover:text-gray-300 drop-shadow-xl text-sm"> @{user().nickName}</span>
               </div>
               <div class="text-white cursor-pointer transition hover:text-red-400">
                 <FiTrash size={16} />

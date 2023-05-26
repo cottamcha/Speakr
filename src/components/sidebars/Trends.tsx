@@ -35,7 +35,7 @@ const trends = [
 const TrendSidebar: Component = () => {
 
     return(
-        <div class="bg-blue-500 bg-opacity-20 hover:bg-opacity-30 overflow-hidden flex-it rounded-2xl">
+        <div class="bg-gray-100 bg-opacity-50 hover:bg-opacity-30 overflow-hidden flex-it rounded-2xl mr-9 shadow-2xl">
                     <div class="flex-it p-4">
                       <span class="text-3xl text-white font-extrabold text-center">Trends</span>
                     </div>
@@ -43,11 +43,11 @@ const TrendSidebar: Component = () => {
                         { (trend) =>
                             <div class="flex-it p-4 cursor-pointer transition duration-200 hover:bg-blue-200 hover:bg-opacity-30">
                                 <div class="flex-it">
-                                <span class="text-lg font-bold">{trend.category}</span>
+                                <span class="text-lg font-bold underline">{trend.category}</span>
                                 <span class="text-white text-sm">
                                     {trend.content}
                                 </span>
-                                <span class="text-gray-400 text-sm">{trend.likeCount} likes</span>
+                                <span class="text-white text-sm text-end">{trend.likeCount} likes</span>
                                 </div>
                             </div>
                         }
