@@ -31,7 +31,7 @@ const LoginScreen: Component = () => {
               <div class="flex-it">
                 <div class="flex-it">
                   <div class="flex-it py-2">
-                    <label class="block text-md font-medium text-gray-700">
+                    <label class="block text-md font-medium text-gray-700" for="email">
                       Email
                     </label>
                     <input
@@ -45,7 +45,7 @@ const LoginScreen: Component = () => {
                     <FormError>{errors["email"]}</FormError>
                   </div>
                   <div class="flex-it py-2">
-                    <label class="block text-md font-medium text-gray-700">
+                    <label class="block text-md font-medium text-gray-700" for="password">
                       Password
                     </label>
                     <input
