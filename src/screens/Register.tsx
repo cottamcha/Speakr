@@ -55,7 +55,7 @@ const RegisterScreen:Component = () => {
                       </div>
     
                       <div class="flex-it py-2">
-                        <label class="block text-md font-medium text-gray-700" for="nickName">
+                        <label class="block text-md font-medium text-gray-700" for="nicknName">
                           Nickname
                         </label>
                         <input
